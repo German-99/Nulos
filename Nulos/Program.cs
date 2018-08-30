@@ -15,13 +15,16 @@ namespace Nulos
             miCarro.kilometraje = 100000;
             Console.WriteLine("Marca: " + miCarro.Marca);
             Console.WriteLine("Km: " + miCarro.kilometraje);
-            if (miCarro.DueñoCarro ! = null)
+            miCarro.DueñoCarro = new Dueño();
+            miCarro.DueñoCarro.Nombre = "Pedro";
+            miCarro.DueñoCarro = null;
+            if (miCarro.DueñoCarro != null)
                 {
                 Console.WriteLine("Dueño: " + miCarro.DueñoCarro.Nombre);
             }
             else
             {
-                Console.WriteLine("No se encontro dieño");
+                Console.WriteLine("No se encontro dueño");
             }
             Console.ReadLine();
 

@@ -13,9 +13,9 @@ namespace Nulos
         public float kilometraje { get; set; }
         public Dueño DueñoCarro { get; set; }
 
-        public string encender()
-        {
+       // public string encender()
+        //{
 
-        }
+        //}
     }
 }
